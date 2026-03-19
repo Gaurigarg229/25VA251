@@ -147,7 +147,64 @@
         }
         productDetail(); 
         
+        //IIFE 
+        (function(){
+            console.log("hello IIFE");
+        })();
 
+        (msg=>console.log("IIFE"))();
+        console.log(typeof(msg));
+
+        //local storage
+        let myInfo={
+            name:"Gauri",
+            age:18,
+            mob:7575632,
+            course:"B.tech",
+            year:1,
+            College:"ABES",
+        }
+        //convert object into JSON string
+        let myInfoData=JSON.stringify(myInfo);
+
+        //set the data
+        localStorage.setItem('prefrences',myInfoData);
+
+       //get data and retereive the data
+        let myPrefrence=localStorage.getItem('prefrences');
+
+         //retrieve the data and convert into JSON object
+         let myInfoPre=JSON.parse(myPrefrence);
+
+         //acess data
+         console.log(myInfoPre.name);
+
+         //Hight order function -many functions 
+         //to make the code reusable ,readable 
+         //map-returns new array
+
+         let num=[1,2,3,4,5,56];
+         let result=num.map(n=>n*2);
+         console.log(result);
+
+         //reduce-returns single value
+         let sum=num.reduce((total,n)=>total+n);
+         console.log(sum);
+
+         //filter-creates nwe array that passes test templates
+         let sorting=num.filter(n=>n>3);
+         console.log(sorting);
+         
+         //forEach
+        let answer= num.forEach((n=>n*n));
+        // console.log(answer);
+        console.log(`updated array is ${num}`);
+
+
+
+
+    
+        
     </script>
 </body>
 </html>
