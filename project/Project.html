@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="project-style.css" rel="stylesheet">
+</head>
+<body>
+
+    <script>
+        document.getElementById("exploreBtn").addEventListener("click", () => {
+    alert(" Ready toExplore !");
+});
+
+function showInfo1() {
+    alert("Climate Awareness Campaign focuses on educating people about environmental issues.");
+}
+
+
+function submitForm() {
+
+    let name = document.getElementById("name").value;
+    let choice = document.querySelector('input[name="choice"]:checked');
+
+    if(name === "") {
+        alert("Please enter your name");
+        return;
+    }
+
+    if(!choice) {
+        alert("Please select a campaign.");
+        return;
+    }
+
+    alert("Welcome " + name + "!");
+    alert("Registration successful!");
+}
+    </script>
+
+    <div class="menu">
+        <input type="checkbox" id="checkbox">
+        <label for="checkbox" class="menu-button">☰</label>
+        <div class="menu-bg"></div>
+        <nav class="menu-elements">
+            <ul>
+                <li>About Nature</li>
+                <li>Your Benefites</li>
+                <li>Popular Programs</li>
+                <li>Success Stories</li>
+                <li>Enroll Now</li>
+
+            </ul>
+        </nav>
+    </div>
+    <header class="start">
+   <div class="header">
+    <div class="emblem-logo">
+        <img src="emblem-logo.webp">
+    </div>
+    <div class="logo">
+        <img src="Logo.png">
+       
+    </div> 
+     <!-- <div class="logo">
+        <img src="Logo.png">
+    </div>  -->
+    
+    <h2><b>Ministry of Environment,Forest and Climate Change</b></h2>
+   <h3><b>Government of India</b></h3>
+   <a class="btn btn-white" href="#" id="explorebttn">Explore</a>
+</div>
+</header>
+
+
+   
+    <section class="page2">
+        <h2 class="heading2">For the benefit of current and future Genration</h2>
+        <div class="sub-page2">
+            <article>
+                <div class="composition">
+                <img  class="pc1" src="photo1.jpg">
+                <img  class="pc2" src="photo-2.webp">
+                <img class="pc3" src="photo-3.jpg">
+                </div>
+                
+            </article>
+            <aside>
+               
+                    <p class="ah1">Our climate is changing fast, and we need to adapt even faster. As a hub for targeted scientific research, community education, and conservation partnerships, Pepperwood is well-positioned to spearhead the science-based resilient solutions needed to guide our path forward despite the uncertainty of our times.</p>
+
+                    <p class="ah2">Stepping Up Progress in this Defining Decade</p>
+
+                    <p class="ah3">Alongside communities, we're urgently clearing obstacles and finding solutions to the climate and biodiversity crises.</p>
+
+                    <p class="ah4">Every acre we protect and every river mile we restore begins with you. Your support helps us take on the dual threats of climate change and biodiversity loss across 80+ countries and territories.</p>
+                    <a class="btn-2 btn-white" href="#">Learn more &rarr;</a>
+
+                
+             </aside>
+        </div>
+    </section>
+    <main class="project">
+        <h2 class="sub-head3">Empower Your Impact with Us</h2>
+        <h3 class="sub-head31">Join India's diverse network of partners and sponsors, drive meaningful CSR initiatives, and earn global recognition for your contributions to environmental sustainability. Together, let’s make a lasting difference for people and the planet.</h3>
+        <div class="project-box">
+
+            <div class="card">
+              <div class="box1 front">
+                   <p class="boxheading">Tree Plantation Drive</p>
+
+                    <ul class="pointers">
+                       <li>Commumity Plantation Campaings</li>
+                       <hr>
+                       <li>Restore Green Cover in Urban area</li>
+                       <hr>
+                       <li>Improve Air quality and Biodiversity</li>
+                       <hr>
+                       <li>Long Term Environmental Impact</li>
+                       <hr>
+                    </ul>
+
+                </div>
+               <div class="back1 back">
+                  <h2>Grow the Future</h2>
+                  <h3>Support renewable energy and build a greener future.</h3>
+                  <button>Plant With Us</button>
+               </div> 
+                
+
+            </div>
+
+
+            <div class="card" >
+                 <div class="box2 front">
+                     <p class="boxheading">Climate A warness Campaign</p>
+
+                   <ul class="pointers">
+                     <li>Environmental education programs</li>
+                     <hr>
+                     <li>Workshops & sustainability talks</li>
+                     <hr>
+                     <li>Youth engagement initiatives</li>
+                     <hr>
+                     <li>Promote eco-friendly lifestyle</li>
+                     <hr>
+                   </ul>
+                 </div>
+
+                 <div class="back2 back">
+                   <h2>Be Climate Smart</h2>
+                   <h3>Small choices today can change the planet tomorrow</h3>
+                   <button onclick="showInfo1()">Spread Awarness</button>
+                 </div>
+            </div>
+
+
+            <div class="card">
+                <div class="box3 front ">
+                    <p class="boxheading">Renewable Energy Initiative</p>
+
+                    <ul class="pointers">
+                        <li>Reduce dependence on fossil fuels</li>
+                        <hr>
+                        <li>Encourage clean electricity generation</li>
+                        <hr>
+                        <li>Support sustainable urban energy</li>
+                        <hr>
+                        <li>Lower carbon emissions</li>
+                        <hr>
+                     </ul>
+                 </div>
+
+                <div class="back3 back">
+                 <h2>Join the Movement</h2>
+                 <h3>Support renewable energy and build a greener future</h3>
+                 <button>Go Green</button>
+                </div>
+            </div>
+        </div> 
+    </main>
+    
+    
+    <section class="page4">
+        <div class="feature-box">
+            <div class="feature-elements">
+               <div class="element1 element">
+                <h3>Discover the world</h3>
+                <p>Explore the beauty and diversity of our planet.
+                    Learn about forests, wildlife, rivers, and ecosystems that support life on Earth.
+                    Together we can understand nature and protect it for future.
+                </p>
+               </div>
+               
+               <div class="element2 element">
+                <h3>meet nature</h3>
+                <p>Nature provides us with clean air, fresh water, and healthy soil.
+                    Discover how plants, animals, and natural resources work together to maintain balance in the environment.
+                </p>
+                </div>
+
+               <div class="element3 element">
+                 <h3>find your way</h3>
+                 <p>Join government initiatives and environmental programs that promote sustainability.
+                    Learn how small actions like saving water, planting trees, and reducing waste can create a greener future.
+                 </p>
+               </div>
+
+               <div class="element4 element">
+                     <h3>live a healthier life</h3>
+                      <p>A clean environment leads to a healthier life.
+                          By protecting nature and reducing pollution, we create safer communities and a better quality of life for everyone.
+                      </p>
+               </div>
+            </div>
+        </div>
+    </section>
+
+
+   <form>   
+    <div class="form-page">
+        <div class="form">
+            <h2 class="form-heading">Volunteer Registration Form</h2>
+            <div class="details">
+                <input type="text"  placeholder="Full name" name="name" id="name" required/>
+                
+                <input type="email" placeholder="Email Address" name="email" id="email" required/>
+             </div>
+                <input class="radio-buttons" type="radio" name="choice" >
+                <label  for="#">Tree Plantation Drive</label>
+                <input class="radio-buttons" type="radio" name="choice">
+                <label for="#">Clean Up Drive</label>
+                <button onclick="submitForm()">Next Step &#8594;</button>
+           
+        </div>
+    </div>
+  </form>
+
+<footer>
+      <!-- <div class="logo">
+        <img src="Logo.png">
+       
+     </div>   -->
+      <div  class="left-footer">
+        <hr class="hr">
+        <p class="footer-elements">Company Contact-us Careers Privacy-policy Terms </p>
+     </div>
+      <div class="right-footer">
+        <hr class="hr">
+        <p>This website promotes environmental awareness and sustainable living. Our goal is to encourage people to protect nature, conserve resources, and participate in activities that help create a cleaner and greener future.
+       </p>
+       
+     </div>  
+</footer>
+    
+</body>
+</html>
